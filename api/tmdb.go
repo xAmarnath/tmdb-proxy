@@ -1,7 +1,6 @@
 package handler
 
 import (
-	"fmt"
 	"io"
 	"net/http"
 	"strings"
@@ -34,4 +33,3 @@ func ImdbProxy(w http.ResponseWriter, r *http.Request) {
 	io.Copy(w, resp.Body)
 	return
 }
-
